@@ -8,13 +8,6 @@ import (
 	"github.com/shirou/gopsutil/mem"
 )
 
-type HwInfo struct {
-	Hostname string `bson:hostname`
-	OS       string `bson:platform`
-	CPU      string `bson:cpu`
-	RAM      string `bson:ram`
-}
-
 func main() {
 	host, _ := host.Info()
 	cpu, _ := cpu.Info()
